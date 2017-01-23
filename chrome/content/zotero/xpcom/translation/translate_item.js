@@ -236,7 +236,7 @@ Zotero.Translate.ItemSaver.prototype = {
 	 * should not be able to set directly.
 	 */
 	"_deleteIrrelevantFields": function(item) {
-		const DELETE_FIELDS = ["attachments", "notes", "dateAdded", "dateModified", "seeAlso", "version", "id", "itemID", "path"];
+		const DELETE_FIELDS = ["attachments", "notes", "seeAlso", "version", "id", "itemID", "path"];
 		for (let i=0; i<DELETE_FIELDS.length; i++) delete item[DELETE_FIELDS[i]];
 		return item;
 	},
